@@ -1,0 +1,126 @@
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.content-container h1 {
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.content-container h1 span {
+    font-size: 2rem;
+    font-weight: 200;
+    transform: translateY(40px) ;
+}
+
+.movie-title {
+    font-size: 2.6rem;
+    color: #e62721;
+    font-style: italic;
+    transform: translateY(-50px);
+    height: 20px;
+}
+
+.movie-text {
+    width:550px ;
+    font-size: 1.1rem;
+    bottom: 19px;
+    font-weight: 100;
+}
+
+.movie-button {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    border-radius: 10px;
+    background-color: #e62721;
+    margin-top: 30px;
+}
+
+.movie-text p {
+    height: 19px;
+}
+
+.social-container {
+    width: 48px;
+}
+
+.social-container ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 17px;
+}
+
+.social-container li {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    font-size: 1.5rem;
+    transition: all 1s;
+}
+
+.social-container li:hover {
+    background-color: #e62721;
+    border-color: #e62721;
+}
+
+@media (max-width:768px) {
+
+    .content-container{
+        justify-content: flex-end;
+        margin-bottom: 50px;
+    }
+
+    .content-container h1{
+        font-size: 4rem;
+        transform: translateY(31px);
+    }
+
+    .content-container h1 span{
+        font-size: 1.5rem;
+        transform: translateY(26px);
+    }
+
+    .content-container span{
+        margin-top: 16px;
+    }
+
+    .movie-title {
+        font-size: 1.45rem;
+        transform: translateY(-9px);
+    }
+
+    .movie-text{
+        display: none;
+    }
+
+    .movie-button{
+        margin-top: 110px;
+    }
+
+    .social-container{
+        display: none;
+    }
+}
